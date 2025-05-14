@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card {
+    padding: 40px;
+    color: white;
+    flex: 1;
+}
+
+.card h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.card button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #e0e0e0;
+}
+
+/* Colores tarjetas */
+.sedan {
+    background: #E38525;
+}
+
+.suv {
+    background: #276871;
+}
+
+.luxury {
+    background: #143F3F;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
